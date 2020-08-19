@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../component_tester.srcs/sources_1/new/matrix_multiplier_pack.vhd" \
+"../../../../component_tester.srcs/sources_1/new/VMU_1.vhd" \
+"../../../../component_tester.srcs/sources_1/new/MMSU_1.vhd" \
+"../../../../component_tester.srcs/sources_1/new/MMSU_2.vhd" \
+"../../../../component_tester.srcs/sources_1/new/MMSU_3.vhd" \
+"../../../../component_tester.srcs/sources_1/new/VMU_2.vhd" \
+"../../../../component_tester.srcs/sources_1/new/VMU_3.vhd" \
+"../../../../component_tester.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../component_tester.srcs/sources_1/new/display.vhd" \
+"../../../../component_tester.srcs/sources_1/new/basic.vhd" \
+"../../../../component_tester.srcs/sources_1/new/relu.vhd" \
+"../../../../component_tester.srcs/sources_1/new/PRNG_8_bit.vhd" \
+"../../../../component_tester.srcs/sources_1/new/rounding_bits_generator.vhd" \
+"../../../../component_tester.srcs/sim_1/new/MMSU_1_tb.vhd" \
+"../../../../component_tester.srcs/sim_1/new/relu_tb.vhd" \
+"../../../../component_tester.srcs/sim_1/new/PRNG_8_bit_tb.vhd" \
+
+# Do not sort compile order
+nosort

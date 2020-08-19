@@ -1,0 +1,114 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Mon May 11 01:02:52 2020
+| Host         : lemon-XPS-15-9570 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : report_drc -file basic_drc_routed.rpt -pb basic_drc_routed.pb -rpx basic_drc_routed.rpx
+| Design       : basic
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 15
++---------+----------+-------------------------------------------------------------------+------------+
+| Rule    | Severity | Description                                                       | Violations |
++---------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1  | Warning  | Input pipelining                                                  | 6          |
+| DPOP-2  | Warning  | MREG Output pipelining                                            | 3          |
+| AVAL-4  | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 3          |
+| REQP-30 | Advisory | enum_MREG_0_connects_CEM_GND                                      | 3          |
++---------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 input MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 input MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 input MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 input MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 input MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 input MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 multiplier stage MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 multiplier stage MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2 multiplier stage MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-30#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+MM/single_vector_multiplier_generate[0].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#2 Advisory
+enum_MREG_0_connects_CEM_GND  
+MM/single_vector_multiplier_generate[1].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#3 Advisory
+enum_MREG_0_connects_CEM_GND  
+MM/single_vector_multiplier_generate[2].vector_multiply/MACC_MACRO_inst/bl.DSP48E_2: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+

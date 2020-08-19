@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May 11 01:01:42 2020
+# Process ID: 10867
+# Current directory: /home/lemon/HardwareDesign/Vivado/Projects/Temporary_Projects/component_tester/component_tester.runs/synth_1
+# Command line: vivado -log basic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basic.tcl
+# Log file: /home/lemon/HardwareDesign/Vivado/Projects/Temporary_Projects/component_tester/component_tester.runs/synth_1/basic.vds
+# Journal file: /home/lemon/HardwareDesign/Vivado/Projects/Temporary_Projects/component_tester/component_tester.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source basic.tcl -notrace
